@@ -1,0 +1,424 @@
+```css
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #ffffff;
+}
+
+
+/* Navigation */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0b3954;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7dd3fc;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(135deg, #0b3954, #087e8b);
+    color: white;
+
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.welcome {
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    margin: 5px;
+
+    background: white;
+    color: #0b3954;
+
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 80px 20px;
+}
+
+.alternate {
+    background: #f4f8fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #0b3954;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+
+/* About */
+
+.about-card,
+.education-card,
+.goals-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h3 {
+    color: #087e8b;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    margin-bottom: 15px;
+}
+
+
+/* Education */
+
+.education-card h3 {
+    color: #0b3954;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.education-card h4 {
+    color: #087e8b;
+    margin-bottom: 12px;
+}
+
+.education-card ul {
+    margin-left: 25px;
+}
+
+.education-card li {
+    margin-bottom: 8px;
+}
+
+
+/* Skills */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+    color: #087e8b;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* Projects */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-number {
+    color: #087e8b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    color: #0b3954;
+    margin-bottom: 12px;
+}
+
+
+/* Interests */
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.interest-card {
+    text-align: center;
+    padding: 30px;
+    background: #f4f8fa;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    background: #e8f5f7;
+}
+
+.interest-card span {
+    font-size: 40px;
+}
+
+.interest-card h3 {
+    color: #0b3954;
+    margin: 10px 0;
+}
+
+
+/* Goals */
+
+.goals-card {
+    max-width: 900px;
+    margin: auto;
+}
+
+.goals-card p {
+    margin-bottom: 18px;
+}
+
+
+/* Contact */
+
+.contact-section {
+    text-align: center;
+    background: #0b3954;
+    color: white;
+}
+
+.contact-section .section-title {
+    color: white;
+}
+
+.contact-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 12px 25px;
+
+    background: white;
+    color: #0b3954;
+
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #06283d;
+    color: white;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        font-size: 13px;
+    }
+}
+```
